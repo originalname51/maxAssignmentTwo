@@ -1,0 +1,16 @@
+<input
+type="text"
+class="form-control"
+[(ngModel)]="userName">
+
+<p>
+  {{userName}}
+</p>
+
+<button
+  class="btn btn-primary"
+  [disabled]="isButtonDisabled()"
+  (click)="clearName()"
+>
+  Clear Name
+</button>
